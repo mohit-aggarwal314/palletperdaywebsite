@@ -1,0 +1,537 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from palletperday.com/account/login by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jan 2023 07:52:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>Login</title>
+    <link href="../Content/cfa2f1.css?v=KExaSySppIAkri-hIEiFI49X6l9L1VfqZ8e6FyC4kDE1" rel="stylesheet"/>
+
+    <link href="../Content/ui5318.css?v=-2cO4k_xSTVi6CvZmBJvRBp89miVE5j3WPOMwOVzyws1" rel="stylesheet"/>
+
+    
+	<link href="../css/icheckd326.css?v=sSBfKoEFcpuy6-87sfu8Rr6PxEtsFpm0ugifuFBeP4M1" rel="stylesheet"/>
+
+
+</head>
+<body>
+    <div id="dvFailure" class="alert alert-danger alert-dismissable text-center overlay-ontop alert-overlay-failure" hidden>
+        <button type="button" class="close-overlay" onclick="$(this).parent().slideUp(300)">×</button>
+        <i class="icon fa fa-ban"></i> <span id="dvContent"></span>
+    </div>
+    <div id="dvSuccess" class="alert alert-success alert-dismissable text-center overlay-ontop alert-overlay-success" hidden>
+        <button type="button" class="close-overlay" onclick="$(this).parent().slideUp(300)">×</button>
+        <i class="icon fa fa-tick"></i> <span id="dvContent"></span>
+    </div>
+
+    <div class="loader2-container loader2-inactive">
+        <div class="loader2"></div>
+    </div>
+
+    
+
+
+
+
+<style type="text/css">
+    .recent-search .dropdown-menu {
+        min-width: 350px;
+        background-color: #fff;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+        .recent-search .dropdown-menu a {
+            font-size: 11px;
+            display: block;
+            overflow: hidden;
+            padding-left: 0;
+            padding-right: 0;
+            background-color: #DB4437;
+            border-bottom: 1px solid #fff;
+        }
+
+            .recent-search .dropdown-menu a .icon {
+                margin-right: 5px;
+            }
+
+            .recent-search .dropdown-menu a .right_area {
+                padding-left: 5px;
+            }
+
+            .recent-search .dropdown-menu a button {
+                background-color: #fff;
+                color: #DB4437;
+                border: 1px solid #ddd;
+                padding: 3px 7px;
+                border-radius: 5px;
+            }
+
+                .recent-search .dropdown-menu a button:hover {
+                    background-color: #fff;
+                    color: #DB4437;
+                    border: 1px solid #ddd;
+                    padding: 3px 7px;
+                    border-radius: 5px;
+                }
+
+                .recent-search .dropdown-menu a button:active {
+                    background-color: #fff;
+                    color: #DB4437;
+                    border: 1px solid #ddd;
+                    padding: 3px 7px;
+                    border-radius: 5px;
+                }
+
+    .recent-search button.btn.deleteSearch {
+        position: absolute;
+        height: 41px;
+        /*top: 0;*/
+        margin-top: -5px;
+        border-radius: 0;
+        border-bottom: 1px solid #fff;
+    }
+</style>
+
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <a class="navbar-brand new" href="../index.html">
+                <span class="part1">Pallet</span><span class="part2">perday</span>
+            </a>
+
+        </div>
+        <div class="collapse navbar-collapse main-nav navbar-right" id="navbar">
+            <div class="header__info">
+                <div class="header__info--top">
+                    <span class="phone">
+                        <a href="tel:+919711256007">
+                            <i class="fa fa-phone-square"></i> 9711-256-007
+                        </a> / <a href="tel:+919711203880">9711-203-880</a>|
+                        <a href="mailto:info@palletperday.com"><i class="fa fa-envelope"></i> info@palletperday.com</a>|<a href="https://www.linkedin.com/company/14382217" target="_blank"><i class="fa fa-linkedin-square" title="linkedin"></i></a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="welcome for-desktop pull-right">
+                <ul class="nav navbar-nav desktop__links" aria-labelledby="dLabel">
+                    <li><a href="../m/manualbooking.html" style="font-weight:bold;">Fill-Your-Requirements</a></li>
+                </ul>
+            </div>
+
+            <div class="welcome for-desktop pull-right">
+                <ul class="nav navbar-nav desktop__links" aria-labelledby="dLabel">
+                    <li><a href="../m/aboutus.html" style="font-weight:bold;">About-Us</a></li>
+                </ul>
+            </div>
+
+                <ul class="nav navbar-nav desktop__links" aria-labelledby="dLabel">
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Log-In</a></li>
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span>Register</a></li>
+                </ul>
+                <ul class="nav navbar-nav mobile__links" aria-labelledby="dLabel" hidden>
+                    <li><a href="tel:+919711256007"><i class="fa fa-phone-square"></i> &nbsp;&nbsp;9711-256-007</a></li>
+                    <li><a href="tel:+919711203880"><i class="fa fa-phone-square"></i> &nbsp;&nbsp;9711-203-880</a></li>
+                    <li><a href="mailto:info@palletperday.com"><i class="fa fa-envelope"></i> &nbsp;&nbsp;info@palletperday.com</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Log-In</a></li>
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span>Register</a></li>
+                </ul>
+
+            <div class="welcome recent-search pull-right" style="margin-right:15px;">
+                <div class="dropdown">
+                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="hidden-xs">Recent Searches</span><span class="caret"></span>
+                    </button>
+                    
+                    <ul class="dropdown-menu" aria-labelledby="dLabel" id="ulRecentSearch"></ul>
+                </div>
+            </div>
+
+            <li id="recentDefaultItem" hidden>
+                <a href="javascript:">
+                    <div class="col-sm-12" style=" padding-top:7px; padding-bottom:7px;">
+                        <div class="clearfix">
+                            <div class="pull-left">
+                                <div class="from pull-left">
+                                    <span>No records.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li id="recentItemToClone" hidden>
+                <a href="javascript:">
+                    <div class="col-sm-9">
+                        <div class="clearfix">
+                            <div class="pull-left">
+                                <div class="from pull-left">
+                                    <i class="fa fa-calendar icon"></i>
+                                    <span spnfromdate></span>
+                                </div>
+                                <i class="fa fa-long-arrow-right pull-left" style="margin:3px 7px 0;"></i>
+                                <div class="to date pull-left right_area">
+                                    <i class="fa fa-calendar icon"></i>
+                                    <span spntodate></span>
+                                </div>,
+                            </div>
+                            <div class="">
+                                &nbsp;&nbsp;&nbsp; Pallet(s) <span spnquantity></span>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <i class="fa fa-map-marker icon"></i>
+                            <span spncity> </span> <span spnstate></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 text-right">
+                        <button type="button" btnsearchitem class="btn btn-primary" searchkey="" onclick="SearchStoredItem($(this))">Search</button>
+                    </div>
+                    <button type="button" btnremoveitem class="deleteSearch btn" deletekey="" onclick="RemoveItemFromLocalStorage($(this))">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </a>
+            </li>
+
+            <form id="resentSearchForm" hidden></form>
+
+            <span hidden id="inset_form">
+
+            </span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="login-box" id="loginpage">
+	<!-- /.login-logo -->
+
+	<div class="step-form">
+
+		<div class="row">
+			<div class="col-lg-4  col-md-8 col-md-offset-4">
+				
+				<div class="login-box-body">
+<form action="https://palletperday.com/account/login" autocomplete="off" exhibitor="btnSignIn" id="formSignUser" method="post">						<h3 class="login-box-msg">Log-In </h3>
+						<div class="form-group has-feedback interactive__input">
+							<label for="EmailID">Email or Contact</label>
+							<input class="form-control" data-val="true" data-val-required=" " id="EmailID" name="EmailID" type="text" value="" />
+							<span class="field-validation-valid" data-valmsg-for="EmailID" data-valmsg-replace="true"></span>
+							<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+						</div>
+						<div class="form-group has-feedback interactive__input">
+							<label for="Password">Password</label>
+							<input class="form-control" data-val="true" data-val-required=" " id="Password" name="Password" type="password" value="" />
+							<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							<span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="col-sm-6" style="padding-left:0px; float:left;">
+									<input class="minimal" id="DoRemember" name="DoRemember" type="checkbox" value="true" /><input name="DoRemember" type="hidden" value="false" />
+									<label class="checkboxLabel" for="DoRemember">Remember Me</label>
+								</div>
+								<div class="col-sm-6 text-right" style="padding-right:5px;">
+									<a class="forgetpassword" href="forgotpassword.html">Forgot Password?</a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<button id="btnSignIn" type="button" exhibitor="dvFailure" class="btn btn-primary btn-block btn-flat signin-btn" onclick="return SignIn($(this));" working-caption="Processing..." default-caption="Submit">Submit</button>
+							</div>
+						</div>
+</form>				</div>
+				<span hidden id="inset_form"></span>
+			</div>
+		</div>
+	</div>
+
+
+	
+</div>
+<footer class="site-footer">
+    <div class="text-center">
+        <div class="copyright col-sm-3">
+            
+            &copy; <script>document.write(new Date().getFullYear()) </script> PalletPerDay. All rights reserved.
+        </div>
+        <nav class="footer-nav col-sm-6">
+			
+            <a href="../m/termsofuse.html" target="_blank">Terms of Use</a>
+            <a href="../m/disclaimer.html" target="_blank">Disclaimer</a>
+            <a href="../m/cancellationsrefund.html" target="_blank">Cancellations & Refund</a>
+			<a href="../m/contact.html" target="_blank">Contact Us</a>
+        </nav>
+        <div class="poweredby col-sm-3">A handcraft by <a href="http://www.firstatom.org/" target="_blank">Firstatom<sup>&trade;</sup></a> </div>
+    </div>
+</footer>
+
+    <div id="modalMessage" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">PalletPerDay</h4>
+			</div>
+			<div class="modal-body">
+				<p id="content"></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modalMessageAndRedirect" class="modal fade in" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Palletperday.com</h4>
+			</div>
+			<div class="modal-body">
+				<h2>Fair Price Guaranteed</h2>
+				<p class="text-center">Unable to find the deal you are looking for?</p>
+				<br />
+				<p class="text-center">Call an agent now or tell us your requirements <a href="../m/manualbooking.html">here</a></p>
+				<br />
+				<h3 class="text-center">Call <strong>NOW</strong></h3>
+				<br />
+				<p class="ad__contact"><a href="tel:+919711256007">9711-256-007</a> / <a href="tel:+919711203880">9711-203-880</a></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal" id="btnOk" data-value="" onclick="window.location.href = '../m/manualbooking.html'">Tell us your requirements</button>
+				<a data-dismiss="modal" class="btn" data-value="0">Cancel</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal-processing-fee" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-md" style="width:500px;">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">PalletPerDay</h4>
+			</div>
+			<div class="modal-body">
+				<table class="table table-condensed">
+					<thead>
+						<tr>
+							<th>Payment Mode</th>
+							<th>Amount</th>
+							<th>Total Tax</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>RTGS / NEFT</td>
+							<td>Any</td>
+							<td>Rs. 5</td>
+						</tr>
+						<tr>
+							<td>Net Banking</td>
+							<td>Any</td>
+							<td>Rs. 20</td>
+						</tr>
+						<tr>
+							<td>Debit Card</td>
+							<td>Less Than 2000</td>
+							<td>Nil</td>
+						</tr>
+						<tr>
+							<td>Debit Card</td>
+							<td>Greater Than 2000</td>
+							<td>1%</td>
+						</tr>
+						<tr>
+							<td>Credit Card</td>
+							<td>Any</td>
+							<td>1.8%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+    
+    <script src="../bundles/jquery5cbc?v=j3mBh5_KeGqTIEC5bFMzJm88y3i0F9Cx-1I0xA21FC81"></script>
+
+    <script src="../bundles/bootstrapd880?v=XgXiRJbk435uPRvwDwFgy4WHUrebYQns0cfFro6JBv41"></script>
+
+    <script src="../bundles/cf5296?v=yxBE1FyF3zi_R3XuwxmWsu9jlqZVHAyaLtdGfCD4jzI1"></script>
+
+    
+	<script src="../js/icheck0655?v=xhQ7cElg0rqG9vTpuvDCRzUOl50DeFH0IWc6e-MYuvk1"></script>
+
+
+	<script type="text/javascript">
+
+		$(function () {
+			$('#DoRemember').iCheck({
+				checkboxClass: 'icheckbox_minimal-red',
+				radioClass: 'iradio_minimal-red'
+			});
+		})
+
+
+		//$(document).ready(function () {
+		//	$('input').iCheck({
+		//		checkboxClass: 'icheckbox_square-blue',
+		//		radioClass: 'iradio_square-blue',
+		//		increaseArea: '20%' // optional
+		//	});
+		//});
+
+		var unverifiedEmail = '14';
+		var unverifiedContact = '15';
+
+		var returnUrl = '';
+
+		function SignIn($extrRef) {
+			var $formObj = $extrRef.closest('form');
+			$formObj.validate();
+
+			if (!$formObj.valid())
+				return;
+
+			var $exbtrRef = GetObjectReference($extrRef.attr('exhibitor'));
+			$exbtrRef.hide();
+
+			$extrRef.attr('disabled', '');
+			$extrRef.text($extrRef.attr('working-caption'));
+
+			//var userName = $formObj.find('#Html.IdFor(item => item.EmailID)').val();
+
+			$.ajax({
+				type: 'POST',
+				url: '/account/login' + '/?' + $formObj.serialize().toString()
+			})
+            .complete(function (resp) {
+            	if (resp.responseJSON.IsSuccess) {
+            		if (returnUrl == '')
+            			window.location.href = '../home/index.html';
+            		else {
+            			//window.location.href = returnUrl;
+            			$('#inset_form').html('<form action="/book/initiateorder" name="frmInitiateOrder" id="frmInitiateOrder" method="post" style="display:none;"><input type="text" name="api_url" value="' + returnUrl + '" /></form>');
+            			//document.forms['frmInitiateOrder'].submit();
+            			InitiateOrder($('#frmInitiateOrder'));
+            		}
+
+            		//return;
+            	}
+            	else {
+            		$exbtrRef.find('#dvContent').html(resp.responseJSON.Message);
+
+            		if (resp.responseJSON.StatusCode == unverifiedEmail) {
+            			window.location.href = '/account/unconfirmedemail/' + resp.responseJSON.ReturnVal;
+            			return;
+            		}
+
+            		else if (resp.responseJSON.StatusCode == unverifiedContact) {
+            			window.location.href = '/account/unconfirmedcontact/' + resp.responseJSON.ReturnVal;
+            			return;
+            		}
+
+            		$exbtrRef.slideDown(500);
+            		$extrRef.removeAttr('disabled');
+            		$extrRef.text($extrRef.attr('default-caption'));
+            	}
+            });
+		}
+
+		$(function () {
+			var successMessage = 'Congratulations! Your account is verified now.';
+			var failureMessage = 'Oops! Either the verification link sent to you is expired, or you have already used this link.' +
+			' Please contact our support if you are facing any issues with your account.';
+
+		});
+
+		$("input").keypress(function (event) {
+			if (event.which == 13) {
+				event.preventDefault();
+				$('#' + $(this).closest('form').attr('exhibitor')).click();
+			}
+		});
+	</script>
+
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-78949249-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+    <script type="text/javascript">
+
+        function setCookie(cname, cvalue, exminutes) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exminutes * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        $(document).ready(function () {
+            var val = getCookie("ManualBooking");
+
+            if (val == null || val == "") {
+                // if changed name of cookie also change in ln 192 of ManualBooking.cshtml
+                setCookie("ManualBooking", 'true', 1);
+            }
+        });
+
+        function GetFailureExhibitor($extrRef) {
+            return GetObjectReference($extrRef.attr('exhibitor-failure'));
+        }
+
+        function GetSuccessExhibitor($extrRef) {
+            return GetObjectReference($extrRef.attr('exhibitor-success'));
+        }
+
+        function P4DLoader() {
+            $('.loader2-container').toggleClass('loader2-inactive');
+        }
+    </script>
+</body>
+
+<!-- Mirrored from palletperday.com/account/login by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jan 2023 07:52:27 GMT -->
+</html>

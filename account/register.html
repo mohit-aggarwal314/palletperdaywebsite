@@ -1,0 +1,640 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from palletperday.com/account/register by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jan 2023 07:52:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>Sign Up | palletperday.com</title>
+    <link href="../Content/cfa2f1.css?v=KExaSySppIAkri-hIEiFI49X6l9L1VfqZ8e6FyC4kDE1" rel="stylesheet"/>
+
+    <link href="../Content/ui5318.css?v=-2cO4k_xSTVi6CvZmBJvRBp89miVE5j3WPOMwOVzyws1" rel="stylesheet"/>
+
+    
+</head>
+<body>
+    <div id="dvFailure" class="alert alert-danger alert-dismissable text-center overlay-ontop alert-overlay-failure" hidden>
+        <button type="button" class="close-overlay" onclick="$(this).parent().slideUp(300)">×</button>
+        <i class="icon fa fa-ban"></i> <span id="dvContent"></span>
+    </div>
+    <div id="dvSuccess" class="alert alert-success alert-dismissable text-center overlay-ontop alert-overlay-success" hidden>
+        <button type="button" class="close-overlay" onclick="$(this).parent().slideUp(300)">×</button>
+        <i class="icon fa fa-tick"></i> <span id="dvContent"></span>
+    </div>
+
+    <div class="loader2-container loader2-inactive">
+        <div class="loader2"></div>
+    </div>
+
+    
+
+<div class="registration-page">
+    <div class="registration-half leftimage">
+        <div class="full-image" style="background-image: url('../CDN/Content/Images/UI/RegistrationBanner.jpg');">
+            <div class="left-copy">
+                <h2>Book Affordable Flexible Space For Storage</h2>
+                <p><em><sup><i class="fa fa-quote-left"></i></sup> Search over thousands of locations and over 1 million square feet area <sup><i class="fa fa-quote-right"></i></sup></em></p>
+            </div>
+        </div>
+    </div>
+    <div class="registration-half right-form">
+        <div class="registration-form-container">
+            <section class="registration-form-section">
+                
+
+                <a class="navbar-brand new" href="../index.html">
+                    <span class="part1">Pallet</span><span class="part2">perday</span>
+                </a>
+
+<form action="https://palletperday.com/account/register" autocomplete="off" method="post">                    <!--Start >> Hack to avoid auto-fill of forms-->
+                    <input style="display:none">
+                    <input type="password" style="display:none">
+                    <!--End >> Hack to avoid auto-fill of forms-->
+                    <div class="registration-form step-form">
+                        <h1>
+                            Sign Up
+                        </h1>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="EmailID">Email<span class="is-mandatory"></span></label>
+                                    <input class="form-control" data-val="true" data-val-regex="(invalid input)" data-val-regex-pattern="\w+([-+.&#39;]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" data-val-required=" " exhibitor="spn_EmailID" id="EmailID" maxlength="50" name="EmailID" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="EmailID" data-valmsg-replace="true"></span>
+                                    
+                                    <span id='spn_EmailID' style="display:none;">
+                                        <span>(this email is already taken)</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="Password">Password<span class="is-mandatory"></span></label>
+                                    <input class="form-control" data-val="true" data-val-length="(8 to 50 characters)" data-val-length-max="50" data-val-length-min="8" data-val-required=" " id="Password" maxlength="50" name="Password" type="password" />
+                                    <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_FirstName">First Name<span class="is-mandatory"></span></label>
+                                    <input class="form-control" data-val="true" data-val-length="(minimum 2 characters)" data-val-length-max="50" data-val-length-min="2" data-val-regex="(invalid input)" data-val-regex-pattern="^[a-zA-Z]+$" data-val-required=" " id="PersonalDetail_FirstName" maxlength="50" name="PersonalDetail.FirstName" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.FirstName" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_LastName">Last Name<span class="is-mandatory"></span></label>
+                                    <input class="form-control" data-val="true" data-val-length="(minimum 2 characters)" data-val-length-max="50" data-val-length-min="2" data-val-regex="(invalid input)" data-val-regex-pattern="^[a-zA-Z]+$" data-val-required=" " id="PersonalDetail_LastName" maxlength="50" name="PersonalDetail.LastName" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.LastName" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="ContactNumber">Contact Number<span class="is-mandatory"></span></label>
+                                    <input class="form-control" data-val="true" data-val-number="The field ContactNumber must be a number." data-val-regex="(invalid input)" data-val-regex-pattern="([1-9])\d{9}" data-val-required=" " exhibitor="spn_ContactNumber" id="ContactNumber" maxlength="10" name="ContactNumber" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="ContactNumber" data-valmsg-replace="true"></span>
+									<span id='spn_ContactNumber' style="display:none;">
+										<span>(this number is already taken)</span>
+									</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_FixedLineCode">STD Code</label>
+                                    <input class="form-control" data-val="true" data-val-length="(invalid input)" data-val-length-max="5" data-val-length-min="2" data-val-regex="(invalid input)" data-val-regex-pattern="^\d+$" id="PersonalDetail_FixedLineCode" maxlength="5" name="PersonalDetail.FixedLineCode" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.FixedLineCode" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_FixedLineNumber">Fixed Line Number</label>
+                                    <input class="form-control" data-val="true" data-val-number="The field FixedLineNumber must be a number." data-val-regex="(invalid input)" data-val-regex-pattern="([1-9])\d{7}" id="PersonalDetail_FixedLineNumber" maxlength="8" name="PersonalDetail.FixedLineNumber" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.FixedLineNumber" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_StateID">State<span class="is-mandatory"></span></label>
+                                    <select id="PersonalDetail_StateID" name="PersonalDetail.StateID" class="form-control">
+                                        <option value=""></option>
+                                            <option value="17">Andaman and Nicobar Islands</option>
+                                            <option value="1">Andhra Pradesh</option>
+                                            <option value="18">Arunachal Pradesh</option>
+                                            <option value="19">Assam</option>
+                                            <option value="2">Bihar</option>
+                                            <option value="20">Chandigarh</option>
+                                            <option value="21">Chhattisgarh</option>
+                                            <option value="22">Dadra and Nagar Haveli</option>
+                                            <option value="23">Daman and Diu</option>
+                                            <option value="3">Delhi NCR</option>
+                                            <option value="24">Goa</option>
+                                            <option value="4">Gujarat</option>
+                                            <option value="5">Haryana</option>
+                                            <option value="25">Himachal Pradesh</option>
+                                            <option value="26">Jammu and Kashmir</option>
+                                            <option value="6">Jharkhand</option>
+                                            <option value="7">Karnataka</option>
+                                            <option value="8">Kerala</option>
+                                            <option value="37">Ladakh</option>
+                                            <option value="27">Lakshadweep</option>
+                                            <option value="9">Madhya Pardesh</option>
+                                            <option value="10">Maharashtra</option>
+                                            <option value="28">Manipur</option>
+                                            <option value="29">Meghalaya</option>
+                                            <option value="30">Mizoram</option>
+                                            <option value="31">Nagaland</option>
+                                            <option value="11">Odisha</option>
+                                            <option value="32">Puducherry</option>
+                                            <option value="12">Punjab</option>
+                                            <option value="13">Rajasthan</option>
+                                            <option value="33">Sikkim</option>
+                                            <option value="14">Tamil Nadu</option>
+                                            <option value="34">Telangana</option>
+                                            <option value="35">Tripura</option>
+                                            <option value="15">Uttar Pradesh</option>
+                                            <option value="36">Uttarakhand</option>
+                                            <option value="16">West Bengal</option>
+                                    </select>
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.StateID" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_CityID">City<span class="is-mandatory"></span></label>
+                                    <select id="PersonalDetail_CityID" name="PersonalDetail.CityID" class="form-control">
+                                        <option value=""></option>
+                                    </select>
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.CityID" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_PinCode">PinCode<span class="is-mandatory"></span></label>
+                                    <input class="form-control" data-val="true" data-val-number="The field PinCode must be a number." data-val-regex="(invalid input)" data-val-regex-pattern="([1-9])\d{5}" data-val-required=" " id="PersonalDetail_PinCode" maxlength="6" name="PersonalDetail.PinCode" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.PinCode" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_Address">Address<span class="is-mandatory"></span></label>
+                                    <input class="form-control" data-val="true" data-val-length="(minimum 10 characters)" data-val-length-max="250" data-val-length-min="10" data-val-required=" " id="PersonalDetail_Address" maxlength="250" name="PersonalDetail.Address" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.Address" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_BusinessEntity">Business Entity<span class="is-mandatory"></span></label>
+                                    <select class="form-control" data-val="true" data-val-number="The field BusinessEntity must be a number." data-val-required=" " id="PersonalDetail_BusinessEntity" name="PersonalDetail.BusinessEntity"><option value=""></option>
+<option value="1">Individuals</option>
+<option value="2">Partnership</option>
+<option value="3">Proprietorship</option>
+<option value="4">Private Limited Company</option>
+<option value="5">Public Limited Company</option>
+</select>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_BusinessType">Business Type</label>
+                                    <select class="form-control" data-val="true" data-val-number="The field BusinessType must be a number." id="PersonalDetail_BusinessType" name="PersonalDetail.BusinessType"><option value=""></option>
+<option value="1">Manufacturing Company</option>
+<option value="2">Distributor</option>
+<option value="3">3PL Player / Logistics Company</option>
+<option value="4">Transporter</option>
+<option value="5">Broker / Agent</option>
+<option value="6">Fleet Owner</option>
+</select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_CompanyName">Company Name</label>
+                                    <input class="form-control" id="PersonalDetail_CompanyName" maxlength="50" name="PersonalDetail.CompanyName" type="text" value="" />
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_YearOfEstablishment">Year of Establishment</label>
+                                    <input class="form-control" data-val="true" data-val-number="The field YearOfEstablishment must be a number." data-val-regex="(invalid input)" data-val-regex-pattern="^[1-2][0-9][0-9][0-9]$" id="PersonalDetail_YearOfEstablishment" maxlength="4" name="PersonalDetail.YearOfEstablishment" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.YearOfEstablishment" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_PANNumber">PAN<span class="is-mandatory"></span></label>
+                                    <input class="form-control" data-val="true" data-val-regex="(invalid input)" data-val-regex-pattern="[a-zA-Z]{5}\d{4}[a-zA-Z]{1}" data-val-required=" " id="PersonalDetail_PANNumber" maxlength="10" name="PersonalDetail.PANNumber" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.PANNumber" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_CINNumber">CIN</label>
+                                    <input class="form-control" data-val="true" data-val-regex="(invalid input)" data-val-regex-pattern="[UL]{1}\d{5}[a-zA-Z]{2}\d{4}[a-zA-Z]{3}\d{6}" id="PersonalDetail_CINNumber" maxlength="21" name="PersonalDetail.CINNumber" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.CINNumber" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_STNumber">Service Tax Number / GSTIN</label>
+                                    <input class="form-control" exhibitor="spn_PersonalDetail_STNumber" id="PersonalDetail_STNumber" maxlength="15" name="PersonalDetail.STNumber" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.STNumber" data-valmsg-replace="true"></span>
+									<span id='spn_PersonalDetail_STNumber' style="display:none;">
+										<span>(invalid Service Tax Number / GSTIN)</span>
+									</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group interactive__input">
+                                    <label for="PersonalDetail_WebsiteURL">Company Website (e.g. palletperday.com)</label>
+                                    <input class="form-control" id="PersonalDetail_WebsiteURL" name="PersonalDetail.WebsiteURL" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="PersonalDetail.WebsiteURL" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-btn-area">
+                            <input type="submit" class="btn btn-primary" value="Submit" onclick="return ValidateForm();">
+                        </div>
+                        <div class="already-account">
+                            Already have an account? <a class="link-signin" href="login.html">Log-In</a>
+                        </div>
+                    </div>
+</form>                <div class="footer text-center">
+                    <nav class="footer-nav">
+                        <a href="../m/termsofuse.html" target="_blank">Terms of Use</a>
+                        <a href="../m/disclaimer.html" target="_blank">Disclaimer</a>
+                        <a href="../m/cancellationsrefund.html" target="_blank">Cancellations & Refund</a>
+                        <a href="../m/contact.html">Contact Us</a>
+                    </nav>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+    <div id="modalMessage" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">PalletPerDay</h4>
+			</div>
+			<div class="modal-body">
+				<p id="content"></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modalMessageAndRedirect" class="modal fade in" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Palletperday.com</h4>
+			</div>
+			<div class="modal-body">
+				<h2>Fair Price Guaranteed</h2>
+				<p class="text-center">Unable to find the deal you are looking for?</p>
+				<br />
+				<p class="text-center">Call an agent now or tell us your requirements <a href="../m/manualbooking.html">here</a></p>
+				<br />
+				<h3 class="text-center">Call <strong>NOW</strong></h3>
+				<br />
+				<p class="ad__contact"><a href="tel:+919711256007">9711-256-007</a> / <a href="tel:+919711203880">9711-203-880</a></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal" id="btnOk" data-value="" onclick="window.location.href = '../m/manualbooking.html'">Tell us your requirements</button>
+				<a data-dismiss="modal" class="btn" data-value="0">Cancel</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal-processing-fee" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-md" style="width:500px;">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">PalletPerDay</h4>
+			</div>
+			<div class="modal-body">
+				<table class="table table-condensed">
+					<thead>
+						<tr>
+							<th>Payment Mode</th>
+							<th>Amount</th>
+							<th>Total Tax</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>RTGS / NEFT</td>
+							<td>Any</td>
+							<td>Rs. 5</td>
+						</tr>
+						<tr>
+							<td>Net Banking</td>
+							<td>Any</td>
+							<td>Rs. 20</td>
+						</tr>
+						<tr>
+							<td>Debit Card</td>
+							<td>Less Than 2000</td>
+							<td>Nil</td>
+						</tr>
+						<tr>
+							<td>Debit Card</td>
+							<td>Greater Than 2000</td>
+							<td>1%</td>
+						</tr>
+						<tr>
+							<td>Credit Card</td>
+							<td>Any</td>
+							<td>1.8%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+    
+    <script src="../bundles/jquery5cbc?v=j3mBh5_KeGqTIEC5bFMzJm88y3i0F9Cx-1I0xA21FC81"></script>
+
+    <script src="../bundles/bootstrapd880?v=XgXiRJbk435uPRvwDwFgy4WHUrebYQns0cfFro6JBv41"></script>
+
+    <script src="../bundles/cf5296?v=yxBE1FyF3zi_R3XuwxmWsu9jlqZVHAyaLtdGfCD4jzI1"></script>
+
+    
+    <script type="text/javascript">
+			    $("#PersonalDetail_StateID").attr("data-val-required", " ")
+			    $("#PersonalDetail_StateID").attr("data-val-number", "The field StateID must be a number.")
+			    $("#PersonalDetail_StateID").attr("data-val", "true")
+			    $("#PersonalDetail_CityID").attr("data-val-required", " ")
+			    $("#PersonalDetail_CityID").attr("data-val-number", "The field CityID must be a number.")
+			    $("#PersonalDetail_CityID").attr("data-val", "true")
+
+
+        $(document).ready(function () {
+        	$('#EmailID').on('keyup keypress blur change', function () { DoesEmailExist($(this)), true });
+        	$('#ContactNumber').on('keyup keypress blur change', function () { DoesContactExist($(this)), true });
+        	$("#PersonalDetail_StateID").change(function () { BindCities(); });
+        	$("#PersonalDetail_STNumber").keyup(function () { IsValidGSTOrServiceTaxNumber($(this), true); });
+            //$.when(GetSTDCodes()).done(function (resp) { BindFixedLineCode(resp); });
+        });
+
+        function BindCities() {
+            if ($('#PersonalDetail_StateID').val() == '') {
+                var innerHtml = "<option value=''></option>";
+                $('#PersonalDetail_CityID').html(innerHtml);
+                $('#PersonalDetail_CityID').parent().closest('.form-group').removeClass('has-focus');
+                return;
+            }
+
+            $('#PersonalDetail_CityID').parent().closest('.form-group').removeClass('has-focus');
+
+            $.ajax({
+                async: true,
+                data: { sid: $('#PersonalDetail_StateID').val() },
+                type: "GET",
+                url: "/AJAX/GetCities"
+            })
+            .complete(function (jqXHR, textStatus) {
+                if (textStatus == "success" && jqXHR.responseText != null) {
+                    var innerHtml = "<option value=''></option>";
+                    var json = $.parseJSON(jqXHR.responseText);
+                    $(json).each(function (index, elm) {
+                        innerHtml += "<option value='" + elm.Value + "'>" + elm.Text + "</option>";
+                    });
+                    $('#PersonalDetail_CityID').html(innerHtml);
+                }
+                else {
+
+                }
+            });
+        }
+
+        
+
+        //function GetSTDCodes() {
+        //    return $.ajax({
+        //        async: false,
+        //        dataType: 'json',
+        //        type: 'GET',
+        //        url: '/AJAX/GetCityCodes'
+        //    });
+        //}
+
+		function DoesEmailExist($elmRef, async) {
+            var validator = $("form").validate(); //obtain validator
+            var $exbtrRef = $('#' + $elmRef.attr('exhibitor'));
+
+            if (validator.element($elmRef) == false) {
+                $exbtrRef.hide();
+                return Boolean(false);
+            }
+
+            var result = false;
+            $.ajax({
+                async: async,
+                data: { email: $elmRef.val() },
+                type: 'POST',
+                url: '/account/isemailavailable'
+            }).complete(function (resp) {
+            	if (resp.responseJSON.IsSuccess) {
+            		$($elmRef.parent()).removeClass('has-error');
+            		$exbtrRef.removeClass('field-validation-error');
+            		$exbtrRef.hide();
+            		result = true;
+            	}
+            	else {
+            		$($exbtrRef.parent()).addClass('has-error');
+            		$exbtrRef.addClass('field-validation-error');
+            		$exbtrRef.show();
+            	}
+            });
+            return result;
+        }
+
+		function DoesContactExist($elmRef, async) {
+        	var validator = $("form").validate(); //obtain validator
+        	var $exbtrRef = $('#' + $elmRef.attr('exhibitor'));
+
+        	if (validator.element($elmRef) == false) {
+        		$exbtrRef.hide();
+        		return Boolean(false);
+        	}
+
+        	var result = false;
+
+        	$.ajax({
+        		async: async,
+        		data: { cn: $elmRef.val() },
+        		type: 'POST',
+        		url: '/account/checkcontactnumberavailability'
+        	}).complete(function (resp) {
+        		if (JSON.parse(resp.responseText) == 's') {
+        			$($elmRef.parent()).removeClass('has-error');
+        			$exbtrRef.removeClass('field-validation-error');
+        			$exbtrRef.hide();
+        			result = true;
+        		}
+        		else {
+        			$($exbtrRef.parent()).addClass('has-error');
+        			$exbtrRef.addClass('field-validation-error');
+        			$exbtrRef.show();
+        		}
+        	});
+        	return result;
+		}
+
+		function IsValidGSTOrServiceTaxNumber($elmRef, async) {
+			var $formObj = $elmRef.closest('form');
+			var validator = $formObj.validate(); //obtain validator
+			var $exbtrRef = GetObjectReference($elmRef.attr('exhibitor'));
+
+			if (validator.element($elmRef) == false) {
+				$exbtrRef.hide();
+				return false;
+			}
+
+			var result = false;
+			$.ajax({
+				type: 'POST',
+				async: async,
+				data: { input: $elmRef.val() },
+				url: '/account/IsValidGSTOrServiceTaxNumber'
+			}).complete(function (resp) {
+				if (resp.responseJSON.IsSuccess) {
+					$($elmRef.parent()).removeClass('has-error');
+					$exbtrRef.removeClass('field-validation-error');
+					$exbtrRef.hide();
+					result = true;
+				}
+				else {
+					$($exbtrRef.parent()).addClass('has-error');
+					$exbtrRef.addClass('field-validation-error');
+					$exbtrRef.show();
+				}
+			});
+			return result;
+		}
+
+        function ValidateForm() {
+            var r = true;
+            if (!$('form').valid()) {
+                r = false;
+            }
+            
+            $elmEmail = $('#EmailID');
+            if (DoesEmailExist($elmEmail, false) == false) {
+                r = false;
+            }
+
+            $elmContact = $('#ContactNumber');
+        	if (DoesContactExist($elmContact, false) == false) {
+            	r = false;
+        	}
+
+        	$elmSTNumber = $('#PersonalDetail_STNumber');
+        	if (IsValidGSTOrServiceTaxNumber($elmSTNumber, false) == false) {
+        		r = false;
+        	}
+            
+            return r;
+        }
+    </script>
+
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-78949249-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+    <script type="text/javascript">
+
+        function setCookie(cname, cvalue, exminutes) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exminutes * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        $(document).ready(function () {
+            var val = getCookie("ManualBooking");
+
+            if (val == null || val == "") {
+                // if changed name of cookie also change in ln 192 of ManualBooking.cshtml
+                setCookie("ManualBooking", 'true', 1);
+            }
+        });
+
+        function GetFailureExhibitor($extrRef) {
+            return GetObjectReference($extrRef.attr('exhibitor-failure'));
+        }
+
+        function GetSuccessExhibitor($extrRef) {
+            return GetObjectReference($extrRef.attr('exhibitor-success'));
+        }
+
+        function P4DLoader() {
+            $('.loader2-container').toggleClass('loader2-inactive');
+        }
+    </script>
+</body>
+
+<!-- Mirrored from palletperday.com/account/register by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jan 2023 07:52:28 GMT -->
+</html>
